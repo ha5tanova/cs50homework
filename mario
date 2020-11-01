@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+//#define _CRT_SECURE_NO_WARNINGS
+int main(void)
+{
+int i, j, h,a,b;//переменные для высоты, пробелов и хэшей
+system("chcp 1251");
+do
+{
+printf("введите высоту нашей пирамиды:");
+scanf_s("%d", &h);
+}
+while (h < 1 || h > 8);//condition
+for (int i = 1; i <= h; i++)//string
+{
+for (a = h - i; a > 0; a--)//space
+{
+printf(" ");
+}
+for (b = 1; b <= i; b++)//hashes
+{
+printf("#");
+}
+printf("\n");
+}
+return 0;
+} 
