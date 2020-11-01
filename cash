@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+//#define _CRT_SECURE_NO_WARNINGS
+int main(void)
+{
+int money,a,b,c,d;
+
+do
+{
+printf("Change owed:");
+float cash;
+scanf("%f", &cash);
+money = round(cash*100);
+}
+while (money < 0);
+
+a = money / 25;
+b = (money % 25) / 10;
+c = ((money % 25) % 10)/5;
+d = ((money % 25) % 10)%5;
+int x = a+b+c+d;
+printf("%d\n",x);
+
+return 0;
+}
