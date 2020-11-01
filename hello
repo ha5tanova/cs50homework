@@ -1,0 +1,6 @@
+# включить < stdio.h >
+# include < cs50.h >
+int main ( пусто )
+{string name = get_string ( " What is your name? \ n " );
+printf ( " Hello, % s \ n " , name);
+}
